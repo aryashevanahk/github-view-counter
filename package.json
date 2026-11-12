@@ -1,7 +1,9 @@
 {
   "name": "github-view-counter",
   "version": "1.0.0",
-  "description": "Simple view counter for GitHub README",
-  "main": "api/counter.js",
-  "dependencies": {}
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
 }
