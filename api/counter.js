@@ -34,11 +34,12 @@ export default async function handler(req, res) {
   const label = "Profile Views";
   const message = shortNumber(views);
   const color = "purple";
+  const labelColor = "9f7aea";
   const style = "for-the-badge";
   const logo = "github";
 
-  const shieldsUrl = `https://img.shields.io/static/v1?label=${encodeURIComponent(label)}&message=${encodeURIComponent(message)}&color=${color}&style=${style}&logo=${logo}`;
-
+  const shieldsUrl = `https://img.shields.io/static/v1?label=${encodeURIComponent(label)}&message=${encodeURIComponent(message)}&color=${color}&labelColor=${labelColor}&style=${style}&logo=${logo}`;
+  
   try {
     const response = await fetch(shieldsUrl);
     const svgText = await response.text();
