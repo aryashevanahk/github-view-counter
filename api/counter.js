@@ -2,7 +2,7 @@
 export default async function handler(req, res) {
   if (req.method !== 'GET') return res.status(405).end();
 
-  const NAMESPACE = 'aryashevanahk'; // ganti, harus unik
+  const NAMESPACE = 'aryashevanahk';
   const KEY       = 'profile-views';
 
   let views = 0;
