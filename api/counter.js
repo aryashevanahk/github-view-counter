@@ -33,8 +33,8 @@ export default async function handler(req, res) {
 
   const label = "Profile Views";
   const message = shortNumber(views);
-  const color = "purple";
-  const labelColor = "9f7aea";
+  const color = "9f7aea";
+  const labelColor = "purple";
   const style = "for-the-badge";
   const logo = "github";
 
